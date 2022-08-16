@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.426">
+<meta name="generator" content="quarto-1.0.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,24 +17,24 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 </style>
 
+
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link class="quarto-color-scheme" href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="site_libs/bootstrap/bootstrap-dark.min.css">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,16 +103,16 @@ ul.task-list{list-style: none;}
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
+<div class="quarto-about-jolla column-page">
   <img src="home-image.png" class="about-image
   round " style="height: 15em; width: 15em;">
  <main class="content column-page" id="quarto-document-content">
 <section id="assistant-professor-of-statistics-at-oregon-state-university." class="level4">
-<h4 class="anchored" data-anchor-id="assistant-professor-of-statistics-at-oregon-state-university.">Assistant Professor of <a href="https://stat.oregonstate.edu">Statistics at Oregon State University</a>.</h4>
+<h4 data-anchor-id="assistant-professor-of-statistics-at-oregon-state-university.">Assistant Professor of <a href="https://stat.oregonstate.edu">Statistics at Oregon State University</a>.</h4>
 <p>Big fan of computing. Often working on applications and methods for self-exciting point processes, but also into tools and methods for teaching statistics in university and high school settings. Find <a href="https://stat.oregonstate.edu/node/1574">my work contact info here</a>.</p>
 </section>
 <section id="site-is-a-bit-under-construction-at-this-point-so-more-coming-soon." class="level3">
-<h3 class="anchored" data-anchor-id="site-is-a-bit-under-construction-at-this-point-so-more-coming-soon.">Site is a bit under construction at this point, so more coming soon.</h3>
+<h3 data-anchor-id="site-is-a-bit-under-construction-at-this-point-so-more-coming-soon.">Site is a bit under construction at this point, so more coming soon.</h3>
 
 
 </section>
@@ -121,15 +121,35 @@ ul.task-list{list-style: none;}
    <div class="about-links">
   <a href="https://twitter.com/jimmylovestea" class="about-link">
     <i class="bi bi-twitter"></i>
+     <span class="about-link-text"></span>
   </a>
   <a href="https://github.com/jimmylovestea" class="about-link">
     <i class="bi bi-github"></i>
+     <span class="about-link-text"></span>
   </a>
 </div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const disableStylesheet = (stylesheets) => {
     for (let i=0; i < stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
@@ -159,8 +179,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     manageTransitions('#quarto-margin-sidebar .nav-link', false);
     if (alternate) {
       enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
     } else {
       disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
     }
     manageTransitions('#quarto-margin-sidebar .nav-link', true);
     // Switch the toggles
@@ -227,13 +253,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
   } 
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;

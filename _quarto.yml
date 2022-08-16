@@ -4,6 +4,8 @@ project:
 website:
   title: "James Molyneux"
   description: "Coffee, tea, statistics"
+  site-url: https://www.jimmylovestea.com
+  repo-url: https://github.com/jimmylovestea/website-jimmylovestea
   navbar:
     type: "dark"
     search: false
