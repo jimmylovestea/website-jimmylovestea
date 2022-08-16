@@ -1,0 +1,26 @@
+---
+# title: "James Molyneux"
+# subtitle: "Assistant Professor of Statistics at Oregon State University</br> Lover of coffee & tea."
+# title-block-banner: true
+page-layout: full
+image: home-image.png
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      # text: Twitter
+      href: https://twitter.com/jimmylovestea
+    # - icon: linkedin
+      # text: LinkedIn
+      # href: https://linkedin.com
+    - icon: github
+      # text: Github
+      href: https://github.com/jimmylovestea
+
+---
+
+#### Assistant Professor of [Statistics at Oregon State University](https://stat.oregonstate.edu). 
+
+Big fan of computing. Often working on applications and methods for self-exciting point processes, but also into tools and methods for teaching statistics in university and high school settings. Find [my work contact info here](https://stat.oregonstate.edu/node/1574).
+
+### Site is a bit under construction at this point, so more coming soon.

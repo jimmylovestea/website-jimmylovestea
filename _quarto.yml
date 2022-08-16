@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  title: "James Molyneux"
+  description: "Coffee, tea, statistics"
+  navbar:
+    type: "dark"
+    search: false
+    left:
+      - href: index.qmd
+        text: Home
+      # - href: about.qmd
+      # - href: blog.qmd
+      # - text: Research
+      #   menu: 
+      #     - text: Research
+      #     - text: Students
+    right:
+      - icon: github
+        href: https://github.com/jimmylovestea
+      - icon: twitter
+        href: https://twitter.com/jimmylovestea
+  # favicon: favicon.png
+  page-footer: "Copyright 2022, James Molyneux"
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
+    html-math-method: katex
+    highlight-style: tango
