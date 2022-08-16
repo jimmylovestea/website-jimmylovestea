@@ -1,0 +1,7 @@
+---
+title: "Page Not Found"
+---
+
+Sorry gang, something's broken. 
+
+[File an issue](https://www.github.com/jimmylovestea) and let me know or just hit the back button.
