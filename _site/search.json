@@ -19,5 +19,40 @@
     "title": "Blog",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "about/about.html",
+    "href": "about/about.html",
+    "title": "James Molyneux",
+    "section": "",
+    "text": "This is more about me"
+  },
+  {
+    "objectID": "about/about/about.html",
+    "href": "about/about/about.html",
+    "title": "James Molyneux",
+    "section": "",
+    "text": "Since starting as an Assistant Professor of Statistics at Oregon State, I’ve enjoyed teaching an abundence of statistical methods courses for stats and non-stats (Read: Real science) graduate students. You can find out more about my students (All of whom are awesome) on my Students page. Working with as many students as I do typically results in getting to work on quite a few fun computational problems, which often feels like another perk of the job.\nOutside of work, I’m grateful to be a travel and adventure buddy to my wife, Jennifer, and keeper of our cat and puppy, Nimbus and French Toast. I love to spend my off-time doing yard work or hiking and kayaking all around Oregon."
+  },
+  {
+    "objectID": "about/coffee/coffee.html",
+    "href": "about/coffee/coffee.html",
+    "title": "James Molyneux",
+    "section": "",
+    "text": "This is more about me"
+  },
+  {
+    "objectID": "about/research/research.html",
+    "href": "about/research/research.html",
+    "title": "Research",
+    "section": "",
+    "text": "More on this soon…"
+  },
+  {
+    "objectID": "about/students/students.html",
+    "href": "about/students/students.html",
+    "title": "James Molyneux",
+    "section": "",
+    "text": "This is more about me"
   }
 ]
